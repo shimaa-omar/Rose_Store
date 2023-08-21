@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Start Of Nav */
+.container1{
+    padding: 0 70px 10px 50px;
+    background-color: #C2518B;
+}
+.container1 .nav{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .about{
+    display: flex;
+    column-gap: 50px;
+}
+.nav .about li{
+    list-style: none;
+}
+.nav .about li a:hover{
+    background-color: white;
+    color: rgb(194, 81, 139);
+    border-radius: 15px;
+}
+.nav .about li a{
+    padding: 5px;
+}
+.nav .about a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.nav .logo{
+    font-size: 30px;
+}
+/*End Of Nav */
+/* start of home */
+.container2{
+    position: relative;
+    padding: 100px 70px 100px 50px;
+}
+.container2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 194, 211, 0.5);
+    z-index: -1;
+}
+.container2 .img1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    align-items: center;
+    background-color: rgba(247, 239, 244, 0.8);
+    padding: 50px;
+    border-radius: 100px 0px;
+    border: 5px #C2518B inset;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img img{
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+}
+.container2 .img1 .discrebtion{
+    font-family: 'Pacifico', cursive;
+}
+.container2 .img1 .discrebtion h2{
+    font-size: 30px;
+    margin-bottom: -10px;
+    text-decoration: underline;
+}
+.container2 .img1 .discrebtion h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container2 .img1 .discrebtion span{
+    color: rgb(178, 80, 163);
+    text-decoration: underline;
+}
+.container2 .img1 .discrebtion p{
+    max-width: 400px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.container2 .img1 .discrebtion .rate i{
+    color: rgb(172, 172, 53);
+    text-shadow: 0 0 5px yellow;
+}
+.container2 .img1 .discrebtion .rate span{
+    font-size: 25px;
+}
+.container2 .img1 .discrebtion .rate span{
+    font-size: 25px;
+}
+.container2 .img1 .discrebtion button{
+    background-color: #C2518B;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 15px;
+    transition-duration: 0.7s;
+}
+.container2 .img1 .discrebtion button:hover{
+    scale: 1.1;
+}
+@media (max-width : 1200px) {
+    .container2 .img1{
+        column-gap: 70px;
+        justify-content: center;
+        max-width: 900px;
+        align-items: center;
+        padding: 30px;
+    }
+    .img img{
+        width: 300px;
+    }
+    .container2 .img1 .discrebtion h2{
+        font-size: 25px;
+        margin-bottom: -10px;
+    }
+    .container2 .img1 .discrebtion h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .container2 .img1 .discrebtion p{
+        width: 300px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width : 992px) {
+    .container2 .img1{
+        column-gap: 30px;
+        max-width: 750px;
+        padding: 30px;
+    }
+    .img img{
+        max-width: 250px;
+    }
+    .container2 .img1 .discrebtion h2{
+        font-size: 23px;
+        margin-bottom: -10px;
+    }
+    .container2 .img1 .discrebtion h3{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .container2 .img1 .discrebtion p{
+        width: 300px;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .container2 .img1 .discrebtion .rate span{
+        font-size: 20px;
+    }
+    .container2 .img1 .discrebtion button{
+        max-width: 200px;
+    }
+}
+@media (max-width : 769px) {
+    .container1 .nav{
+        display: block;
+        text-align: center;
+    }
+    .container1 .nav ul{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .container2 .img1{
+        row-gap: 30px;
+        max-width: 500px;
+        padding: 40px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    .img img{
+        max-width: 250px;
+    }
+    .container2 .img1 .discrebtion h2{
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+    .container2 .img1 .discrebtion h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .container2 .img1 .discrebtion p{
+        width: 300px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .container2 .img1 .discrebtion .rate{
+        margin-bottom: 15px;
+    }
+    .container2 .img1 .discrebtion .rate span{
+        font-size: 20px;
+    }
+    .container2 .img1 .discrebtion button{
+        max-width: 200px;
+    }
+}
+/* start of container 3 */
+.container3{
+    position: relative;
+    padding: 50px 70px 100px 50px;
+}
+.container3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 194, 211, 0.5);
+    z-index: -1;
+}
+.container3 h3{
+    color: #C2518B;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 0 3px rgb(190, 38, 142);
+    font-size: 40px;
+    text-decoration-line: underline;
+    margin-bottom: 70px;
+}
+.container3 .opinion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.container3 .opinion > div{
+    background-color: #ece1e6;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(197, 82, 143);
+    transform: translateY(-10px);
+    transition-duration: 1s;
+    font-family: 'Pacifico', cursive;
+}
+.container3 .opinion > div p{
+    margin-bottom: 10px;
+}
+.container3 .opinion > div span{
+    color: rgb(105, 103, 103);
+}
+.container3 .opinion > div:hover{
+    transform: translateY(10px);
+}
+.container3 .opinion .photo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+/* End of container 3 */
+/* footer */
+.footer{
+    background-color: #C2518B;
+    padding: 20px;
+}
+.footer p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-align: center;
+    cursor: default;
+    color: white;
+}
+.footer i{
+    color: #e9b4cf;
+    font-size: 25px;
+}

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Start Of Nav */
+.container1{
+    padding: 0 70px 10px 50px;
+    background-color: #C2518B;
+}
+.container1 .nav{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .about{
+    display: flex;
+    column-gap: 50px;
+}
+.nav .about li{
+    list-style: none;
+}
+.nav .about li a{
+    padding: 5px;
+}
+.nav .about li a:hover{
+    background-color: white;
+    color: rgb(194, 81, 139);
+    border-radius: 15px;
+}
+
+.nav .about a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.nav .logo{
+    font-size: 30px;
+}
+/*End Of Nav */
+/* start of home */
+.container2{
+    position: relative;
+    padding: 50px 70px 100px 50px;
+}
+.container2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 194, 211, 0.5);
+    z-index: -1;
+}
+.container2 .div1{
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #c34a8682;
+    padding: 40px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.container2 .div1 textarea{
+    width: 300px;
+    height: 200px;
+    outline: white;
+}
+.container2 .div1 label{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+}
+.container2 .div1 div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.container2 .div1 div ::placeholder{
+    color: rgb(85, 20, 63);
+    font-family: 'Pacifico', cursive;
+    text-indent: 10px;
+}
+.container2 .div1 div input{
+    width: 300px;
+    text-align: center;
+}
+.container2 .div1 .name input,
+.container2 .div1 .add input,
+.container2 .div1 .time input{
+    box-shadow: 2px 2px 4px #b93076;
+    border: transparent;
+    outline: transparent;
+    background-color: rgba(230, 194, 211, 0.5);
+
+}
+.container2 .div1 .phone input,
+.container2 .div1 .text textarea{
+    box-shadow: -2px 2px 4px #b93076;
+    border: transparent;
+    outline: transparent;
+    background-color: rgba(230, 194, 211, 0.5);
+}
+.container2 .confirm a{
+    margin: 40px auto;
+}
+.container2 .confirm input{
+    background-color: #b93076;
+    color: white;
+    border: #b93076;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+@media (max-width: 650px) {
+    .container2 .div1{
+        max-width: 400px;
+        padding: 20px;
+    }
+    .container2 .div1 div input{
+        width: 150px;
+    }
+    .container2 .div1 label{
+        font-size: 15px;
+    }
+    .container2 .div1 textarea{
+        width: 150px;
+        height: 100px;
+    }
+    .container2 .confirm a{
+        margin: 20px auto;
+    }
+    .container2 .confirm input{
+        padding: 5px;
+    }
+    .container2 .div1 div ::placeholder{
+        font-size: 10px;
+    }
+}
+/* footer */
+.footer{
+    background-color: #C2518B;
+    padding: 20px;
+}
+.footer p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-align: center;
+    cursor: default;
+    color: white;
+}
+.footer i{
+    color: #e9b4cf;
+    font-size: 25px;
+}

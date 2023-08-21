@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div.container{
+    background-color: #C2518B;
+    margin: 250px auto;
+    padding: 50px;
+    width: 30%;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 5px 5px 5px #b96590;
+    animation-name: up_down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes up_down {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(5px);
+    }
+    80%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.container p{
+    margin-top: 10px;
+    font-size: 17px;
+    display: inline-block;
+}
